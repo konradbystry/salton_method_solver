@@ -1,4 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+import java.util.Collection;
+
 public class Rocchia {
+
+    String objects[];
+    List<Double> corelations = new ArrayList<Double>();
 
     public int setNumerator(char firstObj[], char secObj[]) {
 
@@ -27,6 +35,20 @@ public class Rocchia {
 
     public double corelation(double numerator, double denominator) {
         return numerator / denominator;
+    }
+
+    public void allObjCorelation(String objects[], String groupCenter) {
+        char cent[] = groupCenter.toCharArray();
+
+        for (int i = 0; i < objects.length; i++) {
+            char obj[] = objects[i].toCharArray();
+            corelations.add(corelation(setNumerator(obj, cent), setDenominator(obj, cent)));
+        }
+    }
+
+    public void sort(List<Double> corelations) {
+        Collections.sort(corelations);
+        Collections.reverse(corelations);
     }
 
 }
