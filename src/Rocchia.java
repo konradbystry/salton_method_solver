@@ -1,10 +1,11 @@
 public class Rocchia {
 
-    public int setNumerator(char biggerObj[], char smallerObj[]) {
+    public int setNumerator(char firstObj[], char secObj[]) {
+
         int numerator = 0;
-        for (int i = 0; i < biggerObj.length; i++) {
-            for (int j = 0; j < smallerObj.length; j++) {
-                if (biggerObj[i] == smallerObj[j]) {
+        for (int i = 0; i < firstObj.length; i++) {
+            for (int j = 0; j < secObj.length; j++) {
+                if (firstObj[i] == secObj[j]) {
                     numerator++;
                 }
             }
@@ -12,11 +13,11 @@ public class Rocchia {
         return numerator;
     }
 
-    public int setDenominator(char biggerObj[], char smallerObj[]) {
-        int denominator = biggerObj.length + smallerObj.length;
-        for (int i = 0; i < biggerObj.length; i++) {
-            for (int j = 0; j < smallerObj.length; j++) {
-                if (biggerObj[i] == smallerObj[j]) {
+    public int setDenominator(char firstObj[], char secObj[]) {
+        int denominator = firstObj.length + secObj.length;
+        for (int i = 0; i < firstObj.length; i++) {
+            for (int j = 0; j < secObj.length; j++) {
+                if (firstObj[i] == secObj[j]) {
                     denominator--;
                 }
             }

@@ -12,5 +12,6 @@ public class main {
         System.out.println(rocchia.corelation(numerator, denominator));
         System.out.println(numerator);
         System.out.println(denominator);
+
     }
 }
