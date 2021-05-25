@@ -7,8 +7,8 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class Density extends Corelation {
-    int n1, n2, n1p, n2p;
-    double p1, p2, p1p, p2p;
+    private int n1, n2, n1p, n2p;
+    private double p1, p2, p1p, p2p;
     public List<Objects> m1 = new ArrayList<Objects>();
     public List<Objects> m2 = new ArrayList<Objects>();
     private Iterator i = m2.iterator();
