@@ -8,7 +8,7 @@ public class main {
                 new Objects("ace", "x4"), new Objects("aeh", "x5"), new Objects("bcf", "x6"), new Objects("abe", "x7"),
                 new Objects("abf", "x8"), new Objects("ab", "x9"), new Objects("ef", "x10"), new Objects("abce", "x11"),
                 new Objects("abfgh", "x12"), new Objects("abcef", "x13"), new Objects("abcd", "x14"),
-                new Objects("befgh", "x15"), new Objects("dgh", "x16"), };
+                new Objects("efgh", "x15"), new Objects("dgh", "x16"), };
         rocchia.allObjCorelation(objs, "abef");
         rocchia.setRanks(rocchia.corelations);
         rocchia.sort(rocchia.corelations);
