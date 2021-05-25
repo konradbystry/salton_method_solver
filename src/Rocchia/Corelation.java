@@ -8,7 +8,7 @@ import java.util.Comparator;
 
 public class Corelation {
 
-    public Objects objects[];
+    private Objects objects[];
     public List<Objects> corelations = new ArrayList<Objects>();
     public List<Objects> corelationsSorted = new ArrayList<Objects>();
 
